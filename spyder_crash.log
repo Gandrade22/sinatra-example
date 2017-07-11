@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/spyderlib/spyder.py", line 2331, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/usr/lib/python2.7/dist-packages/spyderlib/spyder.py", line 2215, in run_spyder
+    main.setup()
+  File "/usr/lib/python2.7/dist-packages/spyderlib/spyder.py", line 752, in setup
+    from spyderlib.plugins.inspector import ObjectInspector
+  File "/usr/lib/python2.7/dist-packages/spyderlib/plugins/inspector.py", line 41, in <module>
+    from spyderlib.widgets.ipython import IPythonControlWidget
+  File "/usr/lib/python2.7/dist-packages/spyderlib/widgets/ipython.py", line 28, in <module>
+    pygments_patch.apply()
+  File "/usr/lib/python2.7/dist-packages/spyderlib/pygments_patch.py", line 22, in apply
+    from pygments.lexer import _TokenType, Text, Error
+  File "/usr/lib/python2.7/dist-packages/pygments/lexer.py", line 19, in <module>
+    from pygments.filters import get_filter_by_name
+  File "/usr/lib/python2.7/dist-packages/pygments/filters/__init__.py", line 20, in <module>
+    from pygments.plugin import find_plugin_filters
+  File "/usr/lib/python2.7/dist-packages/pygments/plugin.py", line 39, in <module>
+    import pkg_resources
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2927, in <module>
+    @_call_aside
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2913, in _call_aside
+    f(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2940, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 626, in _build_master
+    ws = cls()
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 619, in __init__
+    self.add_entry(entry)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 675, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 1982, in find_on_path
+    path_item, entry, metadata, precedence=DEVELOP_DIST
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2370, in from_location
+    py_version=py_version, platform=platform, **kw
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2687, in _reload_version
+    md_version = _version_from_file(self._get_metadata(self.PKG_INFO))
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2335, in _version_from_file
+    line = next(iter(version_lines), '')
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2502, in _get_metadata
+    if self.has_metadata(name):
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 1463, in has_metadata
+    return self.egg_info and self._has(self._fn(self.egg_info, name))
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 1568, in _has
+    return os.path.exists(path)
+  File "/usr/lib/python2.7/genericpath.py", line 26, in exists
+    os.stat(path)
+KeyboardInterrupt
