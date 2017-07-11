@@ -11,7 +11,7 @@ RUN \
 
 WORKDIR /app
 
-VOLUME ["/root/sinatra-example/", "/app/"
+VOLUME ["/var/www/html/appSinatra/", "/app/"]
 
 COPY Gemfile /app/
 
