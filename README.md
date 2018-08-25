@@ -1,10 +1,10 @@
-# Sinatra
+# Sinatra Example
 
 ## Build container
-> docker built -t sinatra-example .
+`docker built -t sinatra-example .`
 
 ## Run container
-> docker run -d -p 7080:5000 sanatra-example
+`docker run -d -p 7080:5000 sinatra-example`
 
 ## Access
-> ip-host:7080 
+`ip-host:7080`
