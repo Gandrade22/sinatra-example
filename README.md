@@ -7,4 +7,4 @@
 `docker run -d -p 7080:5000 sinatra-example`
 
 ## Access
-`ip-host:7080`
+`localhost:7080`
