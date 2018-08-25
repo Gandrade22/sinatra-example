@@ -1,10 +1,10 @@
 # Sinatra
 
-## Build do container
+## Build container
 > docker built -t sinatra-example .
 
-## Rodar o container
+## Run container
 > docker run -d -p 7080:5000 sanatra-example
 
-## Acesso
+## Access
 > ip-host:7080 
